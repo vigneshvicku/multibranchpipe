@@ -1,13 +1,14 @@
 pipeline {
 triggers
 {
-cron(env.BRANCH_NAME == 'master' ? '46 19 * * *' : '') 
+cron(env.BRANCH_NAME == 'master' ? '56 19 * * *' : '') 
 }
-agent { docker { image 'python:3.5.1' } }
+agent {
+echo "hello" }
 stages {
 stage('build') {
 steps {
-sh 'python --version'
+echo "working properly"
 }
 }
 }
