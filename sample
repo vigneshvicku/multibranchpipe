@@ -1,7 +1,7 @@
 pipeline {
 triggers
 {
-cron(env.BRANCH_NAME == 'master' ? '46 19 * * *' : '')
+cron(env.BRANCH_NAME == 'master' ? '02 20 * * *' : '')
 }
 agent any
 stages {
