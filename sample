@@ -3,7 +3,7 @@ triggers
 {
 cron(env.BRANCH_NAME == 'master' ? '46 19 * * *' : '')
 }
-agent { }
+agent any
 stages {
 stage('build') {
 steps {
