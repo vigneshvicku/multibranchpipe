@@ -1,10 +1,10 @@
 pipeline {
 triggers
 {
-cron(env.BRANCH_NAME == 'master' ? '56 19 * * *' : '') 
+cron(env.BRANCH_NAME == 'master' ? '57 19 * * *' : '') 
 }
 agent {
-echo "hello" }
+ }
 stages {
 stage('build') {
 steps {
