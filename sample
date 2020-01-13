@@ -1,7 +1,7 @@
 pipeline {
     triggers 
                 { 
-                cron(env.BRANCH_NAME == 'master' ? '28 6 * * *') 
+                cron(env.BRANCH_NAME == 'master' ? '29 6 * * *') 
                 }
     agent { docker { image 'python:3.5.1' } }
     stages {
