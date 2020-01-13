@@ -1,13 +1,13 @@
 pipeline {
 triggers
 {
-cron(env.BRANCH_NAME == 'master' ? '57 19 * * *' : '') 
+cron(env.BRANCH_NAME == 'master' ? '46 19 * * *' : '')
 }
-
+agent { }
 stages {
 stage('build') {
 steps {
-echo "working properly"
+sh 'python --version'
 }
 }
 }
